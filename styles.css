@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Spartan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.background-img {
+    position: fixed;
+}
+
+.background-top {
+    top: 0em;
+    left: 0em;
+}
+
+.background-bottom {
+    bottom: 0em;
+    right: 0em;
+}
+
+.mobile-background {
+    display: none;
+}
+
+.whole-page {
+    position: absolute;
+}
+.top-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70em;
+    color: hsl(300, 43%, 22%);
+}
+
+.topright--card {
+    width: 45em;
+}
+
+.topleft--card {
+    padding-right: 20em;
+}
+
+
+.topleft--card__title {
+    width: 10em;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: .1em;
+}
+
+.topleft--card__body {
+    width: 30em;
+    font-size: 13px;
+    line-height: 1.75em;
+}
+
+
+
+.ratings__block {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+    margin: 1.5em 0em;
+    width: 24em;
+    border-radius: 8px;
+    
+}
+
+.ratings__star {
+    width: 1em;
+    height: 1em;
+    padding: 1em 0.25em;
+}
+
+.ratings__body {
+    font-size: 14px;
+    padding-left: 1em;
+    font-weight: 700;
+}
+
+.first_review {
+    margin-left: -4em;
+}
+
+.second_review {
+    margin-left: -2em;
+}
+
+
+/* testimonials card */ 
+
+.testimonials-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap: 1.5em;
+    justify-content: space-evenly;
+    width: 70em;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.testimonials-card {
+    background-color: hsl(300, 43%, 22%);
+    width: 17em;
+    padding: 2em;
+    height: max-content;
+    border-radius: 10px;
+    
+
+}
+
+.testimonials__name {
+    color: white;
+    font-size: 12px;
+    margin-left: 1em;
+    align-self: center;
+    font-weight: 700;
+   
+}
+
+.testimonials__buyerstatus {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    
+}
+
+.testimonials__body {
+    color: hsl(300, 24%, 96%);
+    font-size: 12px;
+    line-height: 1.75em;
+    
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    align-self: center;
+}
+
+.top-testimonials-card {
+    display: flex;
+    line-height: 1.25em;
+    
+}
+
+.irene {
+    margin-top: 1.5em;
+}
+
+.anne {
+    margin-top: 3em;
+}
+
+/* mobile section */
+
+@media only screen and (max-width: 376px) {
+    .top-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60em;
+        margin: 0 auto;
+        
+    }
+
+  
+
+   
+
+    .topleft--card {
+        padding: 0em;
+        margin: 0 auto;
+    }
+
+    .topleft--card__title {
+        width: 10em;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: .1em;
+        text-align: center;
+    }
+
+    .topleft--card__body {
+        width: 25em;
+        font-size: 13px;
+        line-height: 1.75em;
+        text-align: center;
+    
+        
+    }
+
+    .ratings__block {
+        margin: 0 auto;
+        width: 20em;
+        display: block;
+        text-align: center;
+        line-height: 0.75em;
+    }
+
+    .ratings__star {
+        width: 1em;
+        height: 1em;
+        padding: 1em 0.25em 0.25em 0.25em;
+    }
+
+    .ratings__body {
+        font-size: 12px;
+        font-weight: 700;
+        padding-bottom: .5em;
+        padding-top: 0em;
+    }
+
+    .testimonials-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5em;
+    }
+
+    .testimonials__body {
+        color: hsl(300, 24%, 96%);
+        font-size: 14px;
+        width: 22ch;
+        line-height: 1.75em;
+        
+    }
+
+    .irene {
+        margin-top: 0em;
+    }
+    
+    .anne {
+        margin-top: 0em;
+    }
+
+    .testimonials-card {
+        margin: 0.75em auto
+    }
+
+    .background-img {
+        display: none;
+    }
+    
+    .mobile-background {
+        position: fixed;
+        display: unset;
+    }
+
+    .top-mobile {
+        top: 0em;
+        left: 0em;
+    }
+
+    .bottom-mobile {
+        bottom: 0em;
+        right: 0em;
+        width: 80%;
+    }
+
+    
+
+
+}
